@@ -17,16 +17,16 @@ public class MainActivity extends AppCompatActivity {
 
         //変数にオブジェクト代入
         Button btClick = findViewById(R.id.btClick);
-        HelloListener listner = new HelloListener();
+        HelloListener listener = new HelloListener();
         Button btClear = findViewById(R.id.btClear);
 
         //ボタンにリスナを設定
-        btClick.setOnClickListener(listner);
-        btClear.setOnClickListener(listner);
+        btClick.setOnClickListener(listener);
+        btClear.setOnClickListener(listener);
     }
-    private class HelloListener implements View
 
-            .OnClickListener{
+    //リスナクラスの定義
+    private class HelloListener implements View.OnClickListener{
         @Override
         public void onClick(View view) {
 
